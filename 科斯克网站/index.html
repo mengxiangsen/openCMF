@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <style type="text/css">
+    nav{
+    	padding:8px;
+    }
+    .navbar{
+    	margin-bottom: 0px;
+    }
+    #row-icon{
+    	padding-top:40px;
+    	text-align: center;
+    }
+    #row-icon h4{
+   		padding-bottom: 10px;
+    	font-size: 14px;
+    }
+    #row-icon a{
+    	border:0;
+    }
+    /*图标样式*/
+    .fa{
+    	color:white;
+    	background-color:#0000ff;
+    	padding:20px;
+    	border-radius: 50%;
+    	width:120px;
+    	height: 120px;
+    }
+    .fa-cubes{
+    	background-color:#F68A3A;
+    }
+    .fa-newspaper-o{
+    	background-color:#398CD2;
+    }
+    .fa-users{
+    	background-color: #80C243;
+    }
+    .fa-weixin{
+    	background-color: #DC6AC6;
+    }
+    .fa-book{
+    	background-color: #45BEC3;
+    }
+    .fa-commenting-o{
+    	background-color: #3C9746;
+    }
+    .fa-money{
+    	background-color: #FED825;
+    }
+    .fa-cubes{
+    	background-color: #F68A3A;
+    }
+    .fa-gavel{
+    	background-color: #E83A2C;
+    }
+    .fa-history{
+    	background-color: #F68A3A;
+    }
+    .fa-user{
+    	background-color: #398CD2;
+    }
+    .fa-home{
+    	background-color: #80C243;
+    }
+    .fa-calendar-check-o{
+    background-color: #DC6AC6;
+    }
+    .fa-send-o{
+    	background-color: #45BEC3;
+    }
+    .fa-thumbs-o-up{
+    	background-color: #3C9746;
+    }
+    .fa-coffee{
+    	background-color: #FED825;
+    
+    }
+    #jum a{
+    	background-color: transparent;
+    }
+    #jum h4{
+    	color:white;
+    }
+    #jum i{
+    	background-color: transparent;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default .navbar-fixed-top .main-nav">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span><b><span class="open" style="color: #a5aeb4;">Open</span><span class="cmf" style="color: #3fa9f5;">CMF</span></b></span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" style="background-color:transparent;">首页 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">免费下载</a></li>
+            <li><a href="#">应用云商店</a></li>
+            <li><a href="#">客户案例</a></li>
+            <li><a href="#">商业版本</a></li>
+          </ul>
+          </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!-- 横幅滚动 -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- 滚动小圆点-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+          <!-- 5张滚动图片-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/56e289234566a.jpg" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/56efd10691042.jpg" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/56f3cb902e347.jpg" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/568cdfbcec19c.png" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/5667a55da3751.jpg" alt="...">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+          <!-- 滚动的左右按钮 -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- 图标缩略图 超小屏幕 手机 (<768px) xs为6  小屏幕 平板 (≥768px) sm为4 中等屏幕 桌面显示器 (≥992px) md为2-->
+        <div class="row" id="row-icon" style="margin:0 auto;width: 80%;">
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa fa-cubes fa-5x"></i>
+            </a>
+            <h4>核心模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-newspaper-o fa-5x"></i>
+            </a>
+            <h4>CMS通用模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-users fa-5x"></i>
+            </a>
+            <h4>用户中心模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-weixin fa-5x"></i>
+            </a>
+            <h4>微信模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-book fa-5x"></i>
+            </a>
+            <h4>手册模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-commenting-o fa-5x"></i>
+            </a>
+            <h4>论坛模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-money fa-5x"></i>
+            </a>
+            <h4>充值模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-gavel fa-5x"></i>
+            </a>
+            <h4>跳槽市场</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-history fa-5x"></i>
+            </a>
+            <h4>创业项目</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-user fa-5x"></i>
+            </a>
+            <h4>投资人</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-home fa-5x"></i>
+            </a>
+            <h4>租房房源</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-calendar-check-o fa-5x"></i>
+            </a>
+            <h4>工单模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-send-o fa-5x"></i>
+            </a>
+            <h4>软件发布</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-thumbs-o-up fa-5x"></i>
+            </a>
+            <h4>捐赠模块</h4>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="#" class="thumbnail">
+              <i class="fa fa-coffee fa-5x"></i>
+            </a>
+            <h4>核心模块</h4>
+          </div>
+        </div>
+        <!--
+        背景图片固定 -->
+        <div class="jumbotron" id="jum" style="background-image: url(img/7538.jpg_wh820.jpg);background-size: cover; background-attachment: fixed;">
+          <div class="row" id="row-icon" style="margin:0 auto;width: 80%;">
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa fa-cubes fa-5x"></i>
+              </a>
+              <h4>核心模块</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-newspaper-o fa-5x"></i>
+              </a>
+              <h4>CMS通用模块</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-users fa-5x"></i>
+              </a>
+              <h4>用户中心模块</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-weixin fa-5x"></i>
+              </a>
+              <h4>微信模块</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-book fa-5x"></i>
+              </a>
+              <h4>手册模块</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-commenting-o fa-5x"></i>
+              </a>
+              <h4>论坛模块</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-money fa-5x"></i>
+              </a>
+              <h4>充值模块</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-gavel fa-5x"></i>
+              </a>
+              <h4>跳槽市场</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-history fa-5x"></i>
+              </a>
+              <h4>创业项目</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-user fa-5x"></i>
+              </a>
+              <h4>投资人</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-home fa-5x"></i>
+              </a>
+              <h4>租房房源</h4>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <a href="#" class="thumbnail">
+                <i class="fa fa-calendar-check-o fa-5x"></i>
+              </a>
+              <h4>工单模块</h4>
+            </div>
+          </div>
+        </div>
+        >
+        <div class="container-fluid" style="text-align: center; font-size: 30px;">
+          <p>支持多响应式终端</p>
+          <img src="img/responsive.jpg" style="width: 100%;">
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-2.2.2.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+    </html>
